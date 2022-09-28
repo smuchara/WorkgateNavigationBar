@@ -422,6 +422,7 @@ body {
 }
 
 .home_content .top-navigate .sub-menu-wrap .sub-menu .sub-menu-link i {
+  color: #cccc;
   font-size: 25px;
   margin: 5px;
 }
@@ -430,7 +431,11 @@ body {
   font-size: 15px;
   text-align: left;
 }
-.home_content .top-navigate .sub-menu-wrap .sub-menu .sub-menu-link:hover {
+.home_content
+  .top-navigate
+  .sub-menu-wrap.active
+  .sub-menu
+  .sub-menu-link:hover {
   border-radius: 10px;
   color: white;
   background-color: #333333;
