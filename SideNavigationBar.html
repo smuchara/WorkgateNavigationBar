@@ -108,40 +108,45 @@
     <div class="home_content">
         <div class="text">Dashboard</div>
         <div class="myprofile">
-            <div class="account">
-                <img src="human.jpg" alt="profile pic" id="myaccount">
-                <i class='bx bx-chevron-right'></i>
-            </div>
-            <div class="sub-menu-wrap">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="human.jpg" alt="profile details">
-                        <h2>Stephen Muchara</h2>
-                    </div>
-                    <hr>
-                    <a href="#" class="sub-menu-link">
-                        <i class='bx bxs-user-circle'></i>
-                        <p>Edit Profile</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <i class='bx bx-cog'></i>
-                        <p>Settings & Privacy</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <i class='bx bx-help-circle'></i>
-                        <p>Help & Support</p>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <i class='bx bx-exit'></i>
-                        <p>Log Out</p>
-                        <span>></span>
-                    </a>
+            <div class="user-info" id="myaccount">
+                <img src="human.jpg" alt="profile details">
+                <div class="description">
+                    <h2>Stephen Muchara</h2>
+                    <p>Junior Software Developer</p>
                 </div>
             </div>
+            <i class='bx bx-chevron-down'></i>
         </div>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu">
+                <a href="#" class="sub-menu-link">
+                    <i class='bx bxs-user-circle'></i>
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class='bx bx-cog'></i>
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class='bx bx-help-circle'></i>
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class='bx bxs-droplet-half'></i>
+                    <p>Dark</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class='bx bx-exit'></i>
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
     <script>
         let sidebar = document.querySelector(".sidebar");
@@ -150,7 +155,7 @@
         let hamburgermenuBtn = document.querySelector("#nav-icon1");
         let myaccountBtn = document.querySelector("#myaccount");
         let submenuwrap = document.querySelector(".sub-menu-wrap");
-        let dropdown = document.querySelector(".bx.bx-chevron-right");
+        let dropdown = document.querySelector(".bx.bx-chevron-down");
         searchBtn.onclick = function () {
             sidebar.classList.toggle("active")
             hamburgermenuBtn.classList.toggle("open")

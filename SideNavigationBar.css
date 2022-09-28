@@ -304,6 +304,7 @@ body {
 }
 
 .home_content .text {
+  font-weight: bolder;
   font-size: 25px;
   color: #1d1b31;
   margin-top: 12px;
@@ -323,12 +324,13 @@ body {
   justify-content: space-between;
 }
 
-.home_content .account {
+.home_content .myprofile {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-
-.home_content .account span {
+.home_content .myprofile span {
   font-size: 20px;
   font-weight: 400;
 }
@@ -339,19 +341,19 @@ body {
   top: 0;
   transition: all 0.5s ease;
 }
-.home_content .myprofile .account .bx.bx-chevron-right.active {
-  transform: rotateX(50deg);
+
+.home_content .myprofile .account .bx.bx-chevron-down {
+  margin-left: -10px;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.home_content .myprofile .account .bx.bx-chevron-down.active {
+  transform: rotateX(180deg);
 }
 .home_content .myprofile img {
   border-radius: 100%;
   width: 50px;
   height: 50px;
-  margin: 10px;
-}
-
-.home_content .myprofile .user-info img {
-  height: 30px;
-  width: 30px;
   margin: 10px;
 }
 
@@ -364,7 +366,7 @@ body {
   position: absolute;
   display: inline-block;
   top: 70%;
-  right: 10%;
+  right: 6%;
   width: 320px;
   max-height: 0;
   overflow: hidden;
@@ -382,9 +384,17 @@ body {
   align-items: center;
 }
 
-.user-info h2 {
-  font-size: 20px;
-  font-weight: 100;
+.user-info .description {
+  margin-bottom: 10px;
+}
+
+.home_content .myprofile h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.home_content .myprofile p {
+  font-size: 10px;
 }
 
 .sub-menu .user-info hr {
