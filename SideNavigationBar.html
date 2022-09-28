@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="SideNavigationBar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <title>NavigationBar</title>
 </head>
 
@@ -103,13 +108,37 @@
     <div class="home_content">
         <div class="text">Dashboard</div>
         <div class="myprofile">
-            <img src="human.jpg" alt="profile pic">
+            <div class="account">
+                <img src="human.jpg" alt="profile pic" id="myaccount">
+                <i class='bx bx-chevron-right'></i>
+            </div>
             <div class="sub-menu-wrap">
                 <div class="sub-menu">
                     <div class="user-info">
                         <img src="human.jpg" alt="profile details">
                         <h2>Stephen Muchara</h2>
                     </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bxs-user-circle'></i>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bx-cog'></i>
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bx-help-circle'></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bx-exit'></i>
+                        <p>Log Out</p>
+                        <span>></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,6 +148,9 @@
         let menucontainerBtn = document.querySelector(".menu-container");
         let searchBtn = document.querySelector(".bx-search");
         let hamburgermenuBtn = document.querySelector("#nav-icon1");
+        let myaccountBtn = document.querySelector("#myaccount");
+        let submenuwrap = document.querySelector(".sub-menu-wrap");
+        let dropdown = document.querySelector(".bx.bx-chevron-right");
         searchBtn.onclick = function () {
             sidebar.classList.toggle("active")
             hamburgermenuBtn.classList.toggle("open")
@@ -127,6 +159,12 @@
             sidebar.classList.toggle("active")
             hamburgermenuBtn.classList.toggle("open")
         }
+
+        myaccountBtn.onclick = function () {
+            submenuwrap.classList.toggle("active")
+            dropdown.classList.toggle("active")
+        }
+
     </script>
 </body>
 

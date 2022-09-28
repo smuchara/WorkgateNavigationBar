@@ -2,13 +2,14 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
   position: relative;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #ecebe4;
 }
 .menu-container {
@@ -304,7 +305,6 @@ body {
 
 .home_content .text {
   font-size: 25px;
-  font-weight: 800;
   color: #1d1b31;
   margin-top: 12px;
 }
@@ -323,22 +323,36 @@ body {
   justify-content: space-between;
 }
 
+.home_content .account {
+  display: flex;
+  align-items: center;
+}
+
+.home_content .account span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .home_content .myprofile {
   position: absolute;
-  right: 80px;
+  right: 120px;
   top: 0;
   transition: all 0.5s ease;
 }
+.home_content .myprofile .account .bx.bx-chevron-right.active {
+  transform: rotateX(50deg);
+}
 .home_content .myprofile img {
-  border-radius: 10px;
+  border-radius: 100%;
   width: 50px;
   height: 50px;
   margin: 10px;
 }
 
 .home_content .myprofile .user-info img {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
 
 .sidebar.active ~ .home_content .myprofile {
@@ -348,9 +362,14 @@ body {
 
 .sub-menu-wrap {
   position: absolute;
-  top: 100%;
+  display: inline-block;
+  top: 70%;
   right: 10%;
   width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 .sub-menu {
   background-color: #fff;
@@ -361,4 +380,51 @@ body {
 .user-info {
   display: flex;
   align-items: center;
+}
+
+.user-info h2 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.sub-menu .user-info hr {
+  border: 0;
+  height: 1;
+  width: 100%;
+  margin: 15px;
+  color: #cccc;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  color: #050609;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.sub-menu-link i {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.sub-menu-link p {
+  text-align: left;
+}
+.sub-menu-link:hover {
+  border-radius: 10px;
+  color: white;
+  background-color: #333333;
+  transform: translateX(10px);
+  font-size: bold;
+}
+
+.sub-menu-wrap.active {
+  max-height: 450px;
+  transform: translateY(30px);
+  opacity: 1;
 }
