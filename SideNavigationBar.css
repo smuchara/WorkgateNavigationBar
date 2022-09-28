@@ -307,7 +307,6 @@ body {
   font-weight: bolder;
   font-size: 25px;
   color: #1d1b31;
-  margin-top: 12px;
 }
 
 .sidebar.active ~ .home_content {
@@ -324,40 +323,43 @@ body {
   justify-content: space-between;
 }
 
-.home_content .myprofile {
+.home_content .top-navigate {
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.home_content .myprofile span {
+.home_content .top-navigate span {
   font-size: 20px;
   font-weight: 400;
 }
 
-.home_content .myprofile {
+.home_content .top-navigate {
   position: absolute;
   right: 120px;
   top: 0;
   transition: all 0.5s ease;
 }
-
-.home_content .myprofile .account .bx.bx-chevron-down {
+.home_content .top-navigate i {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.home_content .top-navigate .account .bx.bx-chevron-down {
   margin-left: -10px;
   font-size: 30px;
   transition: all 0.5s ease-in-out;
 }
-.home_content .myprofile .account .bx.bx-chevron-down.active {
+.home_content .top-navigate .account .bx.bx-chevron-down.active {
   transform: rotateX(180deg);
 }
-.home_content .myprofile img {
+.home_content .top-navigate img {
   border-radius: 100%;
   width: 50px;
   height: 50px;
   margin: 10px;
 }
 
-.sidebar.active ~ .home_content .myprofile {
+.sidebar.active ~ .home_content .top-navigate {
   transform: translateX(calc(100%-240px));
   right: 240px;
 }
@@ -388,12 +390,12 @@ body {
   margin-bottom: 10px;
 }
 
-.home_content .myprofile h2 {
+.home_content .top-navigate h2 {
   font-size: 15px;
   font-weight: bold;
 }
 
-.home_content .myprofile p {
+.home_content .top-navigate p {
   font-size: 10px;
 }
 
