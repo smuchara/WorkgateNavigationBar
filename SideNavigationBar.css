@@ -9,6 +9,7 @@ body {
   width: 100%;
   overflow: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ecebe4;
 }
 .menu-container {
   margin-top: -30px;
@@ -91,12 +92,13 @@ body {
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   height: 100%;
   width: 70px;
-  background: #11101d;
+  background: #333333;
   padding: 6px 14px;
   transition: all 0.5s ease;
 }
@@ -196,7 +198,7 @@ body {
   border-radius: 12px;
   outline: none;
   border: none;
-  background-color: #1d1b31;
+  background-color: #ecebe4;
   padding-left: 50px;
   font-size: 18px;
   color: #fff;
@@ -204,7 +206,7 @@ body {
 .sidebar ul li .bx-search {
   position: absolute;
   z-index: 99;
-  color: #fff;
+  color: #bf0a1b;
   font-size: 22px;
   transition: all 0.5 ease;
 }
@@ -240,7 +242,8 @@ body {
 }
 .sidebar.active ul li a:hover {
   font-size: medium;
-  background-color: #1d1b31;
+  background-color: #ecebe4;
+  color: #050609;
 }
 .sidebar ul li i {
   height: 50px;
@@ -287,20 +290,75 @@ body {
 
 .home_content {
   position: absolute;
-  height: 100%;
-  width: calc(100%-78px);
+  height: 10%;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 5px rgb(223, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  width: calc(100%);
   left: 78px;
-  transition: all 0.5 ease;
+  transition: all 0.5s ease;
 }
 
 .home_content .text {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 800;
   color: #1d1b31;
   margin-top: 12px;
 }
 
 .sidebar.active ~ .home_content {
-  width: calc(100%-240px);
+  transform: translateX(calc(100%-240px));
   left: 240px;
+}
+
+.horizontalNavBar {
+  width: 95%;
+  height: 10%;
+  margin: auto;
+  box-shadow: 10px 10px 10px 5px rgb(223, 223, 223);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_content .myprofile {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.home_content .myprofile img {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.home_content .myprofile .user-info img {
+  height: 25px;
+  width: 25px;
+}
+
+.sidebar.active ~ .home_content .myprofile {
+  transform: translateX(calc(100%-240px));
+  right: 240px;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+}
+.sub-menu {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
 }
