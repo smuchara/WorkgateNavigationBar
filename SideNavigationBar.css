@@ -343,7 +343,9 @@ body {
 .home_content .top-navigate i {
   margin: 0px 10px;
   font-size: 20px;
+  color: #050609;
 }
+
 .home_content .top-navigate .account .bx.bx-chevron-down {
   margin-left: -10px;
   font-size: 30px;
@@ -364,18 +366,18 @@ body {
   right: 240px;
 }
 
-.sub-menu-wrap {
+.home_content .sub-menu-wrap {
   position: absolute;
   display: inline-block;
   top: 70%;
-  right: 6%;
+  right: 2%;
   width: 320px;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.5s ease;
 }
-.sub-menu {
+.home_content .sub-menu-wrap .sub-menu {
   background-color: #fff;
   padding: 20px;
   margin: 10px;
@@ -407,7 +409,7 @@ body {
   color: #cccc;
 }
 
-.sub-menu-link {
+.home_content .top-navigate .sub-menu-wrap .sub-menu-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -419,22 +421,22 @@ body {
   border-radius: 10px;
 }
 
-.sub-menu-link i {
+.home_content .top-navigate .sub-menu-wrap .sub-menu .sub-menu-link i {
   font-size: 25px;
   margin: 5px;
 }
 
-.sub-menu-link p {
+.home_content .top-navigate .sub-menu-wrap .sub-menu .sub-menu-link p {
+  font-size: 15px;
   text-align: left;
 }
-.sub-menu-link:hover {
+.home_content .top-navigate .sub-menu-wrap .sub-menu .sub-menu-link:hover {
   border-radius: 10px;
   color: white;
   background-color: #333333;
   transform: translateX(10px);
   font-size: bold;
 }
-
 .sub-menu-wrap.active {
   max-height: 450px;
   transform: translateY(30px);
