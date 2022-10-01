@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>NavigationBar</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="/SVG/Group 10.svg" alt="workgatelogo" width="30px">
+                <div class="logo_name">
+                    Workgate
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="hamburgermenu">
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="/Template/Dashboard.html" target="_self">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="/Template/team.html" target="_self">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">Team</span>
+                </a>
+                <span class="tooltip">Team</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-task'></i>
+                    <span class="links_name">Tasks</span>
+                </a>
+                <span class="tooltip">Tasks</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-folder-open'></i>
+                    <span class="links_name">Projects</span>
+                </a>
+                <span class="tooltip">Projects</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-report'></i>
+                    <span class="links_name">Weekly Report</span>
+                </a>
+                <span class="tooltip">Weekly Report</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart'></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content">
+        <div class="text">Dashboard</div>
+        <div class="top-navigate">
+            <a href="#"><i class='bx bxs-message-alt-detail'></i></a>
+            <a href="https://www.pinterest.com/"><i class='bx bx-bell'></i></a>
+            <div class="user-info" id="myaccount">
+                <img src="/images/human.jpg" alt="profile details">
+                <div class="description">
+                    <h2>Stephen Muchara</h2>
+                    <p>Junior Software Developer</p>
+                </div>
+            </div>
+            <i class='bx bx-chevron-down'></i>
+            <div class="sub-menu-wrap">
+                <div class="sub-menu">
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bxs-user-circle'></i>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bx-cog'></i>
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bx-help-circle'></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bxs-droplet-half'></i>
+                        <p>Dark</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class='bx bx-exit'></i>
+                        <p>Log Out</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rating" id="changeRatingContainer">
+        <div class="card-container">
+            <div class="card-title">
+                <p>Planned</p>
+            </div>
+            <div class="card-description">
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-title">
+                <p>In Progress</p>
+            </div>
+            <div class="card-description">
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-title">
+                <p>Comleted</p>
+            </div>
+            <div class="card-description">
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-title">
+                <p>Completed Percentage</p>
+            </div>
+            <div class="card-description">
+            </div>
+        </div>
+    </div>
+    <script src="/Js/Dashboard.js"></script>
+</body>
+
+</html>

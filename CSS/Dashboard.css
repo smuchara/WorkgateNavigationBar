@@ -14,7 +14,7 @@ body {
 }
 .menu-container {
   margin-top: -30px;
-  margin-left: 15px;
+  margin-left: 60px;
   margin-bottom: 50px;
   transition: all 0.5s ease;
 }
@@ -45,7 +45,7 @@ body {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #ffffff;
+  background: #000000;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -81,7 +81,7 @@ body {
 
 #nav-icon1.open span:nth-child(2) {
   opacity: 0;
-  left: -30px;
+  left: -10px;
 }
 
 #nav-icon1.open span:nth-child(3) {
@@ -112,24 +112,36 @@ body {
   height: 50px;
   width: 100%;
   align-items: center;
-  opacity: 0;
+  margin-left: 10px;
+  opacity: 1;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .sidebar.active .logo_content .logo {
   opacity: 1;
   pointer-events: none;
 }
-
 .logo_content .logo i {
   font-size: 28px;
   margin-right: 5px;
 }
-
-.logo_content .logo .logo_name {
+.sidebar .logo_content .logo .logo_name {
   font-size: 20px;
   font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  margin-left: 0px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active .logo_content .logo .logo_name {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 0px;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .sidebar #btn {
@@ -199,13 +211,14 @@ body {
   border-radius: 12px;
   outline: none;
   border: none;
-  background-color: #ecebe4;
+  background-color: #ffffff9d;
   padding-left: 50px;
   font-size: 18px;
   color: #fff;
 }
 .sidebar ul li .bx-search {
   position: absolute;
+
   z-index: 99;
   color: #bf0a1b;
   font-size: 22px;
@@ -306,6 +319,7 @@ body {
 .home_content .text {
   font-weight: bolder;
   font-size: 25px;
+  margin-left: 3%;
   color: #1d1b31;
 }
 
@@ -318,7 +332,6 @@ body {
   width: 95%;
   height: 10%;
   margin: auto;
-  box-shadow: 10px 10px 10px 5px rgb(223, 223, 223);
   align-items: center;
   justify-content: space-between;
 }
@@ -368,7 +381,7 @@ body {
 
 .home_content .sub-menu-wrap {
   position: absolute;
-  display: inline-block;
+  z-index: 100;
   top: 70%;
   right: 2%;
   width: 320px;
@@ -376,11 +389,11 @@ body {
   overflow: hidden;
   opacity: 0;
   transition: all 0.5s ease;
+  box-shadow: 9px 9px 15px 2px grey;
 }
 .home_content .sub-menu-wrap .sub-menu {
   background-color: #fff;
   padding: 20px;
-  margin: 10px;
 }
 
 .user-info {
@@ -446,4 +459,58 @@ body {
   max-height: 450px;
   transform: translateY(30px);
   opacity: 1;
+}
+
+.rating {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 15%;
+  left: 32px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.rating.active {
+  transform: translateX(100px);
+}
+
+.card-container {
+  border: 1px solid white;
+  height: 250px;
+  width: 280px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0px 20px;
+  transition: all 0.5s ease;
+}
+
+.rating .card-container:hover {
+  transform: translateX(10px);
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: 5px 5px 20px 5px rgba(44, 43, 43, 0.555);
+}
+.card-container .card-title {
+  background: #cccccc;
+  width: 100%;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.rating.open {
+  z-index: -1;
+}
+
+.rating.active .card-container {
+  border: 1px solid white;
+  height: 200px;
+  width: 240px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 20px;
 }

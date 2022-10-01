@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SideNavigationBar.css">
+    <link rel="stylesheet" href="/CSS/Dashboard.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
-                <i class='bx bxl-squarespace'></i>
+                <img src="/SVG/Group 10.svg" alt="workgatelogo" width="30px">
                 <div class="logo_name">
-                    Workgate
+                    orkgate
                 </div>
             </div>
             <div class="menu-container">
@@ -40,14 +40,14 @@
                 <span class="tooltip">Search</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/Template/Dashboard.html" target="_self">
                     <i class='bx bxs-grid-alt'></i>
                     <span class="links_name">Dashboard</span>
                 </a>
                 <span class="tooltip">Dashboard</span>
             </li>
             <li>
-                <a href="#">
+                <a href="/Template/team.html" target="_self">
                     <i class='bx bxs-group'></i>
                     <span class="links_name">Team</span>
                 </a>
@@ -95,22 +95,15 @@
                 </a>
                 <span class="tooltip">Saved</span>
             </li>
-            <li id="signout">
-                <a href="#">
-                    <i class='bx bx-log-out' id="log_out"></i>
-                    <span class="links_name">Sign Out</span>
-                </a>
-                <span class="tooltip">Sign Out</span>
-            </li>
         </ul>
     </div>
     <div class="home_content">
-        <div class="text">Dashboard</div>
+        <div class="text">Team</div>
         <div class="top-navigate">
             <a href="#"><i class='bx bxs-message-alt-detail'></i></a>
             <a href="https://www.pinterest.com/"><i class='bx bx-bell'></i></a>
             <div class="user-info" id="myaccount">
-                <img src="human.jpg" alt="profile details">
+                <img src="/images/human.jpg" alt="profile details">
                 <div class="description">
                     <h2>Stephen Muchara</h2>
                     <p>Junior Software Developer</p>
@@ -148,7 +141,7 @@
             </div>
         </div>
     </div>
-    <script src="SideNavigationBar.js"></script>
+    <script src="/Js/Dashboard.js"></script>
 </body>
 
 </html>
