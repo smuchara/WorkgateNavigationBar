@@ -14,7 +14,7 @@
     <title>NavigationBar</title>
 </head>
 
-<body>
+<body class="body">
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
@@ -98,10 +98,96 @@
         </ul>
     </div>
     <div class="home_content">
-        <div class="text">Dashboard</div>
+        <div class="text">
+            <p>Dashboard</p>
+        </div>
         <div class="top-navigate">
-            <a href="#"><i class='bx bxs-message-alt-detail'></i></a>
-            <a href="https://www.pinterest.com/"><i class='bx bx-bell'></i></a>
+            <span class="messageButton"><i class='bx bxs-message-alt-detail'></i></span>
+            <span class="notificationButton"><i class='bx bx-bell'></i></span>
+            <div class="notificationMenu">
+                <div class="messagesContainer">
+                    <div class="title">Messages</div>
+                    <hr>
+                </div>
+
+                <div class="messages">
+                    <a href="#">
+                        <img src="/images/profilepic1.jpg" alt="profilePic">
+                        <div class="mymessages">
+                            <p class="sender">Shawn Mendes</p>
+                            <div class="messagetext">
+                                <p>Hello there! Did you finish the project.</p>
+                            </div>
+                        </div>
+                        <p class="timer">10 minutes ago</p>
+                    </a>
+                    <a href="#">
+                        <img src="/images/human.jpg" alt="profilePic">
+                        <div class="mymessages">
+                            <p class="sender">Ryan Sang</p>
+                            <div class="messagetext">
+                                <p>Hope you are done with your weekly tasks.</p>
+                            </div>
+                        </div>
+                        <p class="timer">5 minutes ago</p>
+                    </a>
+                    <a href="#">
+                        <img src="/images/profilepic2.jpg" alt="profilePic">
+                        <div class="mymessages">
+                            <p class="sender">Njogu Kimondo</p>
+                            <div class="messagetext">
+                                <p>Check out your email for more information.</p>
+                            </div>
+                        </div>
+                        <p class="timer">just now</p>
+                    </a>
+                </div>
+                <div class="viewallContainer">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="notificationMenu2">
+                <div class="messagesContainer">
+                    <div class="title">Notifications</div>
+                    <hr>
+                </div>
+
+                <div class="messages">
+                    <a href="#">
+                        <img src="/images/profilepic1.jpg" alt="profilePic">
+                        <div class="mymessages">
+                            <p class="sender">Shawn Mendes</p>
+                            <div class="messagetext">
+                                <p>Hello there! Did you finish the project.</p>
+                            </div>
+                        </div>
+                        <p class="timer">10 minutes ago</p>
+                    </a>
+                    <a href="#">
+                        <img src="/images/human.jpg" alt="profilePic">
+                        <div class="mymessages">
+                            <p class="sender">Ryan Sang</p>
+                            <div class="messagetext">
+                                <p>Hope you are done with your weekly tasks.</p>
+                            </div>
+                        </div>
+                        <p class="timer">5 minutes ago</p>
+                    </a>
+                    <a href="#">
+                        <img src="/images/profilepic2.jpg" alt="profilePic">
+                        <div class="mymessages">
+                            <p class="sender">Njogu Kimondo</p>
+                            <div class="messagetext">
+                                <p>Check out your email for more information.</p>
+                            </div>
+                        </div>
+                        <p class="timer">just now</p>
+                    </a>
+                </div>
+                <div class="viewallContainer">
+                    <a href="#">View All</a>
+                </div>
+            </div>
             <div class="user-info" id="myaccount">
                 <img src="/images/human.jpg" alt="profile details">
                 <div class="description">
@@ -127,9 +213,10 @@
                         <p>Help & Support</p>
                         <span>></span>
                     </a>
-                    <a href="#" class="sub-menu-link">
+                    <a href="#" class="sub-menu-link" id="darkmode">
                         <i class='bx bxs-droplet-half'></i>
-                        <p>Dark</p>
+                        <p class="txt">Dark Mode</p>
+                        <p class="txt2">Light Mode</p>
                         <span>></span>
                     </a>
                     <a href="#" class="sub-menu-link">
@@ -158,7 +245,7 @@
         </div>
         <div class="card-container">
             <div class="card-title">
-                <p>Comleted</p>
+                <p>Completed</p>
             </div>
             <div class="card-description">
             </div>
